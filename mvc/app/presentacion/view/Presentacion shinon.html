@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Carlos Steve Martinez Chavez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        #gustos {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #gustos h2 {
+            font-size: 1.5rem;
+        }
+        :hover.menuitem{
+            color: red;
+            font-size: 2rem;
+            list-style-type:georgian;
+        }
+        .menulista{
+            list-style-type:lower-latin;
+        }
+    </style>
+
+<style>
+    body {
+        font-family:'Courier New', Courier, monospace;
+        background-color: #4dd3bd;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #7ddaff;
+        color: #000000;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    #gustos {
+        background-color: #6e6060;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #gustos h2 {
+        font-size: 1.5rem;
+    }
+    :hover.menuitem{
+        color: blue;
+        font-size: 2rem;
+        list-style-type:georgian;
+    }
+    .menulista{
+        list-style-type:lower-latin;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>¡Hola, soy Carlos Steve Martinez Chavez!</h1>
+        <p>Alias "el shinon"</p>
+    </header>
+
+    <div id="gustos">
+        <h2>Mis Gustos</h2>
+        <p>Me apasiona jugar videojuegos y ver anime. Disfruto de la emoción y la creatividad que ambos mundos ofrecen.</p>
+    </div>
+
+    <ul class="menulista">
+        <li class="menuitem" onclick="reStyle(0)">Hoja ccs 1</li>
+        <li class="menuitem" onclick="reStyle(1)">Hoja ccs 2</li>
+        <li class="menuitem" onclick="noStyle()">No Style</li>
+    </ul>
+    <script>
+        function noStyle() {
+            document.styleSheets[0].disabled = true;
+            document.styleSheets[1].disabled = true;
+        }
+
+        function reStyle(n){
+            noStyle()
+            document.styleSheets[n].disabled = false;
+        }
+    </script>
+
+</body>
+</html>
